@@ -1,0 +1,789 @@
+* {
+  font-family: "Raleway", sans-serif, Tahoma;
+  list-style: none;
+  box-sizing: border-box;
+}
+img {
+  object-fit: cover;
+}
+a {
+  color: #000000;
+}
+a:link {
+  text-decoration: none;
+}
+h1 {
+  font-size: 22px;
+}
+h2 {
+  font-size: 18px;
+}
+.icon-star {
+  color: #0065fc;
+}
+.star-grey {
+  color: #f2f2f2;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  margin-top: 20px;
+  max-width: 1440px;
+}
+.wrap {
+  padding: 4px;
+}
+.fa-solid.fa-star {
+  margin-top: 15px;
+  padding: 0px;
+}
+.title-card {
+  width: 100%;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  font-weight: bold;
+}
+
+/*Header*/
+/*Logo + Menu*/
+
+#logo {
+  margin-right: auto;
+  padding-left: 50px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 40px;
+  min-width: 175px;
+}
+nav a {
+  padding: 30px;
+  border-top: 3px solid transparent;
+}
+nav a:hover {
+  border-top-color: #0065fc;
+  color: #0065fc;
+}
+.nav-bar {
+  display: flex;
+}
+
+/*Main*/
+/*Moteur de recheche*/
+.text-search {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+}
+.search {
+  background-color: #ffffff;
+  margin: auto;
+  width: 94%;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-form {
+  border: solid 1px #f2f2f2;
+  border-left-style: none;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-icon-input {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-icon {
+  background-color: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+  border: solid 1px #f2f2f2;
+}
+.fa-solid {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 16px;
+}
+.form-search-input {
+  background-color: #ffffff;
+  height: 50px;
+  padding-left: 15px;
+  font-size: larger;
+  font-weight: bold;
+}
+.respons-big-submit {
+  background-color: #0065fc;
+  width: 150px;
+  height: 52px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  font-size: larger;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+.respons-big-submit:hover {
+  transform: scale(1.03);
+}
+.search-magnifying-glass {
+  background-color: #0065fc;
+  border-radius: 0 10px 10px 0;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  transition: transform 0.1s;
+}
+.search-magnifying-glass:hover {
+  transform: scale(1.03);
+}
+
+/*Filtres*/
+.button-filter {
+  background-color: #ffffff;
+  margin: auto;
+  width: 94%;
+  padding-left: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.button-style {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 16px;
+  padding: 0px;
+  border: solid 2px;
+  background-color: #ffffff;
+  border-color: #d3cfcf;
+  border-radius: 50px;
+  padding-right: 20px;
+  height: 46px;
+  cursor: pointer;
+}
+.button-style:hover {
+  background-color: #f2f2f2;
+}
+.button-style .fa-solid {
+  display: flex;
+  flex-wrap: wrap;
+  color: #0065fc;
+  background-color: #deebff;
+  border: none;
+  padding: 13px;
+  margin: 0 6px 0 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.information {
+  background-color: #ffffff;
+  margin: auto;
+  width: 92.8%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.information .fa-solid {
+  color: #0065fc;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #d4d3d3;
+  border-radius: 100%;
+  padding: 10px;
+  margin-left: 8px;
+}
+.information-text {
+  padding-left: 10px;
+}
+.marseille-most-popular {
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  width: 94%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Hébergements à marseille*/
+.hebergment-marseille {
+  background-color: #f2f2f2;
+  border: solid 1px #f2f2f2;
+  border-radius: 20px;
+  order: 1;
+  margin: 0px;
+  justify-content: space-around;
+  width: 68%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-hebergment-marseille {
+  border: solid 0px #ffff;
+  box-shadow: 0px 3px 10px #0000002e;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px 20px 30px 20px;
+  width: 30%;
+  height: auto;
+  margin: 15px;
+  transition: transform 0.1s;
+}
+.card-hebergment-marseille:hover {
+  transform: scale(1.04);
+}
+.item-card-hebergment-marseille {
+  border: solid 0px #ffff;
+  box-shadow: 0px 3px 10px #0000002e;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px 20px 0 0;
+  width: 96%;
+  height: auto;
+  margin: 6px;
+  max-height: 130px;
+}
+.text1-card-hebergment-marseille {
+  font-weight: bold;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+.text2-card-hebergment-marseille {
+  padding-left: 15px;
+}
+.icon-star-card-hebergment-marseille {
+  color: #0065fc;
+  padding-left: 15px;
+  padding-bottom: 5px;
+}
+.show-more {
+  width: 100%;
+  font-weight: bold;
+  color: #000000;
+  padding-top: 20px;
+  padding-left: 35px;
+  padding-bottom: 20px;
+}
+.show-more a:hover {
+  color: #0065fc;
+}
+
+/*les plus populaires*/
+.most-popular {
+  background-color: #f2f2f2;
+  border: solid 1px #f2f2f2;
+  border-radius: 20px;
+  order: 2;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  height: 659px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-most-popular {
+  border: solid 1px #ffff;
+  box-shadow: 0px 3px 10px #0000002e;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px 20px 30px 20px;
+  width: 93%;
+  height: auto;
+  margin: 15px;
+  transition: transform 0.1s;
+}
+.card-most-popular:hover {
+  transform: scale(1.04);
+}
+.item-card-most-popular {
+  border: solid 0px #ffff;
+  box-shadow: 0px 3px 10px #0000002e;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px 0 0 20px;
+  width: 45%;
+  height: 150px;
+  margin: 4px;
+  margin-right: 20px;
+  float: left;
+}
+.text1-card-most-popular {
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.text2-card-most-popular {
+  padding-left: 15px;
+  padding-bottom: 30px;
+}
+.icon-star-card-most-popular {
+  padding-left: 15px;
+  padding-bottom: 5px;
+  color: #0065fc;
+}
+
+/*Activités à Marseille*/
+.activity-marseille {
+  background-color: #ffffff;
+  width: 94%;
+  margin: auto;
+  align-items: center;
+}
+.text-activity-marseille {
+  font-weight: bold;
+  color: #000000;
+  padding-left: 15px;
+}
+.title-activity-marseille {
+  background-color: #ffffff;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  width: 90%;
+  font-size: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.block-card-activity-marseille {
+  background-color: #ffffff;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.text-activity-marseille {
+  margin-top: 10px;
+}
+.card1-activity-marseille {
+  margin-bottom: 50px;
+  width: 285px;
+  height: 450px;
+  border: solid 1px #0000002e;
+  box-shadow: 0px 3px 10px #0000002e;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px 20px 30px 20px;
+  transition: transform 0.1s;
+}
+.card1-activity-marseille:hover {
+  transform: scale(1.04);
+}
+.item1-activity-marseille {
+  margin: auto;
+  width: 283px;
+  height: 395px;
+  border: solid 1px #f2f2f2;
+  border-radius: 40px;
+  border-radius: 20px 20px 0 0;
+}
+.card-2-3-activity-marseille {
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  width: 285px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item2-activity-marseille {
+  width: 283px;
+  height: 165px;
+  border: solid 1px #f2f2f2;
+  border-radius: 40px;
+  border-radius: 20px 20px 0 0;
+}
+.card2-activity-marseille {
+  width: 285px;
+  height: 220px;
+  border: solid 1px #0000002e;
+  box-shadow: 0px 3px 10px #0000002e;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px 20px 30px 20px;
+  transition: transform 0.1s;
+}
+.card2-activity-marseille:hover {
+  transform: scale(1.04);
+}
+.card3-activity-marseille {
+  width: 285px;
+  height: 160px;
+  border: solid 1px #0000002e;
+  box-shadow: 0px 3px 10px #0000002e;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px 20px 30px 20px;
+  transition: transform 0.1s;
+}
+.card3-activity-marseille:hover {
+  transform: scale(1.04);
+}
+.item3-activity-marseille {
+  width: 283px;
+  height: 105px;
+  border: solid 1px #f2f2f2;
+  border-radius: 40px;
+  border-radius: 20px 20px 0 0;
+}
+.card4-activity-marseille {
+  margin-bottom: 50px;
+  width: 285px;
+  height: 450px;
+  border: solid 1px #0000002e;
+  box-shadow: 0px 3px 10px #0000002e;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px 20px 30px 20px;
+  transition: transform 0.1s;
+}
+.card4-activity-marseille:hover {
+  transform: scale(1.04);
+}
+.item4-activity-marseille {
+  margin: auto;
+  width: 283px;
+  height: 395px;
+  border: solid 1px #f2f2f2;
+  border-radius: 40px;
+  border-radius: 20px 20px 0 0;
+}
+.card-5-6-activity-marseille {
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  width: 285px;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card5-activity-marseille {
+  width: 285px;
+  height: 164px;
+  border: solid 1px #0000002e;
+  box-shadow: 0px 3px 10px #0000002e;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px 20px 30px 20px;
+  transition: transform 0.1s;
+}
+.card5-activity-marseille:hover {
+  transform: scale(1.04);
+}
+.item5-activity-marseille {
+  width: 283px;
+  height: 110px;
+  border: solid 1px #f2f2f2;
+  border-radius: 40px;
+  border-radius: 20px 20px 0 0;
+}
+.card6-activity-marseille {
+  width: 285px;
+  height: 230px;
+  border: solid 1px #0000002e;
+  box-shadow: 0px 3px 10px #0000002e;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px 20px 30px 20px;
+  transition: transform 0.1s;
+}
+.card6-activity-marseille:hover {
+  transform: scale(1.04);
+}
+.item6-activity-marseille {
+  width: 283px;
+  height: 175px;
+  border: solid 1px #f2f2f2;
+  border-radius: 40px;
+  border-radius: 20px 20px 0 0;
+}
+
+/*Footer*/
+.footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 15px 0px;
+  display: flex;
+  align-items: center;
+}
+.about {
+  background-color: #f2f2f2;
+  margin: auto;
+}
+.about a:hover {
+  color: #0065fc;
+}
+
+/*Média Queries*/
+@media (max-width: 1392px) {
+  .most-popular {
+    height: 926px;
+  }
+}
+@media (max-width: 1024px) {
+  .activity-marseille {
+    height: 926px;
+    width: 80%;
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
+  .most-popular {
+    background-color: rgb(255, 255, 255);
+    order: 1;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hebergment-marseille {
+    background-color: rgb(255, 255, 255);
+    order: 2;
+    margin: auto;
+    margin-top: 25px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .title-card {
+    padding-left: 34px;
+  }
+  .activity-marseille {
+    width: 100%;
+  }
+  .title-activity-marseille {
+    width: 100%;
+    padding-left: 62px;
+  }
+  .block-card-activity-marseille {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  #logo {
+    margin: auto;
+    align-items: center;
+    padding-left: 0px;
+  }
+  nav {
+    padding-right: 0px;
+  }
+  .nav-bar {
+    width: 100%;
+    text-align: center;
+  }
+  .nav-bar a {
+    margin-right: auto;
+    width: 50%;
+    border-bottom: 3px solid #f2f2f2;
+  }
+  .nav-bar a:hover {
+    border-bottom-color: #0065fc;
+    border-top-color: transparent;
+  }
+  .button-filter {
+    margin: auto;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search-form {
+    flex-wrap: wrap;
+  }
+  .form-search-input {
+    width: 160px;
+    font-size: 15px;
+  }
+  .respons-big-submit {
+    display: none;
+  }
+  .search-magnifying-glass {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+  }
+  .card-hebergment-marseille {
+    width: 85%;
+    height: auto;
+    margin: 25px;
+  }
+  .item-card-hebergment-marseille {
+    width: 98%;
+    max-height: 100px;
+  }
+  .card-most-popular {
+    width: 85%;
+    height: auto;
+    margin: 25px;
+  }
+  .item-card-most-popular {
+    margin-right: 5px;
+  }
+  .activity-marseille {
+    width: 100%;
+  }
+  .title-activity-marseille {
+    padding-left: 57px;
+  }
+  .block-card-activity-marseille {
+    margin: auto;
+    width: 85%;
+  }
+  .block-card-activity-marseille a {
+    width: 100%;
+  }
+  .card1-activity-marseille {
+    margin: 30px auto;
+    width: 95%;
+    max-height: 162px;
+    margin-bottom: 50px;
+  }
+  .item1-activity-marseille {
+    width: 100%;
+    max-height: 107px;
+  }
+  .card-2-3-activity-marseille {
+    width: 100%;
+    max-height: 375px;
+  }
+  .card2-activity-marseille {
+    margin: auto;
+    width: 95%;
+
+    max-height: 162px;
+    margin-bottom: 30px;
+  }
+  .item2-activity-marseille {
+    width: 100%;
+    max-height: 107px;
+  }
+  .card3-activity-marseille {
+    margin: auto;
+    width: 95%;
+    max-height: 162px;
+  }
+  .item3-activity-marseille {
+    width: 100%;
+    max-height: 107px;
+  }
+  .card4-activity-marseille {
+    margin: 0px auto 30px;
+    width: 95%;
+    max-height: 162px;
+    margin-bottom: 50px;
+  }
+  .item4-activity-marseille {
+    width: 100%;
+    max-height: 107px;
+  }
+  .card-5-6-activity-marseille {
+    width: 100%;
+    max-height: 375px;
+  }
+  .card5-activity-marseille {
+    margin: auto;
+    width: 95%;
+    max-height: 162px;
+  }
+  .item5-activity-marseille {
+    width: 100%;
+    max-height: 107px;
+  }
+  .card6-activity-marseille {
+    margin: auto;
+    width: 95%;
+    max-height: 162px;
+  }
+  .item6-activity-marseille {
+    width: 100%;
+    max-height: 107px;
+  }
+  .footer {
+    background-color: #f2f2f2;
+    width: 100%;
+    flex-direction: column;
+  }
+  .about {
+    padding-left: 40px;
+    width: 50%;
+  }
+}
+@media (max-width: 495px) {
+  .item-card-hebergment-marseille {
+    width: 96%;
+  }
+  .title-activity-marseille {
+    padding-top: 10px;
+    padding-left: 49px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 392px) {
+  .item-card-most-popular {
+    height: 230px;
+  }
+  .item-card-hebergment-marseille {
+    width: 96%;
+  }
+  .title-activity-marseille {
+    padding-left: 48px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 284px) {
+  .search-magnifying-glass {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+  }
+  .card-most-popular {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .text2-card-most-popular {
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+  .item-card-hebergment-marseille {
+    width: 94%;
+    height: auto;
+  }
+  .title-activity-marseille {
+    padding: 0px 42px;
+  }
+  .about {
+    padding-left: 0px;
+    width: 40%;
+  }
+}
+@media (max-width: 274px) {
+  .button-style {
+    font-size: 10px;
+    font-weight: bold;
+    height: 40px;
+  }
+  .about {
+    padding-left: 0px;
+    width: 50%;
+  }
+}
